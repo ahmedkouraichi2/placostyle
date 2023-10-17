@@ -1,0 +1,115 @@
+/* Header */
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 150px;
+}
+
+section.top-page {
+    background: url('../assets/bg.jfif');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+/* Landing Page */
+.landing-page {
+    position: relative;
+    padding: 20px 5%; /* Use percentage for padding to make it responsive */
+}
+
+.big-title {
+    color: white;
+    font-size: 120px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    width: 60%;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Navigation */
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%; /* Use full width for responsiveness */
+    margin: 20px 0; /* Adjust margin for spacing */
+    padding: 0 5%; /* Use percentage for padding to make it responsive */
+}
+
+nav.nav li {
+    margin-right: 10px;
+}
+
+nav.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 5%; /* Use percentage for margin to make it responsive */
+    font-weight: 600;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: black;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap; /* Allow services to wrap on smaller screens */
+    justify-content: space-evenly;
+    margin: 20px 5%; /* Use percentage for margin to make it responsive */
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px; /* Adjust margin for spacing */
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #BC4C56;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 768px) {
+    .big-title {
+        font-size: 80px;
+        width: 80%;
+    }
+
+    nav.nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0; /* Reset padding for smaller screens */
+    }
+
+    footer,
+    .services {
+        margin: 20px 5%;
+    }
+}

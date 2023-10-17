@@ -1,1 +1,97 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* Header */
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 150px;
+}
+
+section.top-page {
+    background: url('../src/assets/logo.png');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+/* Landing Page */
+.landing-page {
+    position: relative;
+    padding: 20px 50px;
+}
+
+.big-title {
+    color: white;
+    font-size:  120px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    width: 60%;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Navigation */
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%; /* Adjusted width for responsiveness */
+    padding: 0 20px; /* Added padding for spacing */
+}
+
+nav.nav li {
+    margin-right: 10px; /* Added margin for spacing between menu items */
+}
+
+nav.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 768px) {
+    .big-title {
+        font-size: 80px; /* Adjust font size for smaller screens */
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    nav.nav {
+        flex-direction: column; /* Stack navigation items in a column for smaller screens */
+        align-items: center; /* Center align navigation items */
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    nav.nav li {
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .big-title {
+        font-size: 60px; /* Further reduce font size for even smaller screens */
+        width: 100%; /* Full width for even smaller screens */
+    }
+}
